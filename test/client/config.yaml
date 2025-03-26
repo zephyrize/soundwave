@@ -1,0 +1,11 @@
+service:
+  name: "test-service"
+  port: 8080
+  version: "1.0.0"
+  metadata:
+    env: "test"
+    region: "cn-east-1"
+
+registry:
+  url: "http://localhost:7777"
+  heartbeat_interval: "10s" 

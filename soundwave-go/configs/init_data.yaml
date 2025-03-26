@@ -1,0 +1,51 @@
+# 预设用户配置
+users:
+  - username: "admin"
+    password: "123456"
+    role: "admin"
+    permissions:
+      - "view_services"
+      - "view_stats"
+      - "manage_system"
+      - "manage_users"
+      - "view_alarm"
+  - username: "user"
+    password: "123456"
+    role: "user"
+    permissions:
+      - "view_services"
+      - "view_stats"
+  - username: "tester"
+    password: "123456"
+    role: "tester"
+    permissions:
+      - "view_services"
+      - "view_stats"
+
+# 预设菜单配置
+menus:
+  - name: "服务列表"
+    path: "/services"
+    icon: "DesktopOutlined"
+    permission: "view_services"
+    sort: 1
+  - name: "服务统计"
+    path: "/stats"
+    icon: "FileOutlined"
+    permission: "view_stats"
+    sort: 2
+  - name: "服务报警"
+    path: "/alarm"
+    icon: "BellOutlined"
+    permission: "view_alarm"
+    sort: 3 
+  - name: "系统设置"
+    path: "/settings"
+    icon: "SettingOutlined"
+    permission: "manage_system"
+    sort: 4
+  - name: "用户管理"
+    path: "/users"
+    icon: "UserOutlined"
+    permission: "manage_users"
+    sort: 5
